@@ -14,6 +14,7 @@ export default function Navbar({
     { label: "Home", href: "#" },
     { label: "Services", href: "#services" },
     { label: "About", href: "#about" },
+    { label: "Testimonials", href: "#testimonials" },
     { label: "Contact", href: "#contact" },
   ],
 }: NavbarProps) {
@@ -21,6 +22,20 @@ export default function Navbar({
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setIsMenuOpen(false);
+      }
+    }
   };
 
   return (
@@ -42,6 +57,7 @@ export default function Navbar({
                   key={index}
                   href={link.href}
                   className="text-gray-700 hover:text-black transition-colors duration-200"
+                  onClick={(e) => handleNavClick(e, link.href)}
                 >
                   {link.label}
                 </a>
@@ -83,7 +99,7 @@ export default function Navbar({
               key={index}
               href={link.href}
               className="block text-gray-700 hover:text-black transition-colors duration-200"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={(e) => handleNavClick(e, link.href)}
             >
               {link.label}
             </a>

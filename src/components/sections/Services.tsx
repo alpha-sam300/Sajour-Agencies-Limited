@@ -27,15 +27,21 @@ interface Service {
   };
 }
 
+import { useScrollAnimations, useHoverAnimations } from "../animations";
+
 export default function Services({ services = defaultServices }: ServiceProps) {
+  useScrollAnimations();
+  useHoverAnimations();
   const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
+    <section id="services" className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 fade-in">
+            Our Services
+          </h2>
+          <p className="text-gray-600 max-w-3xl mx-auto fade-in">
             We provide comprehensive construction solutions tailored to meet
             your specific needs, delivering excellence at every stage of your
             project.
@@ -47,7 +53,7 @@ export default function Services({ services = defaultServices }: ServiceProps) {
             <Dialog key={service.id}>
               <DialogTrigger asChild>
                 <div
-                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer flex flex-col items-center text-center"
+                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer flex flex-col items-center text-center hover-lift scale-up"
                   onClick={() => setSelectedService(service)}
                 >
                   <div className="bg-gray-100 p-4 rounded-full mb-4">

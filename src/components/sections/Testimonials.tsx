@@ -1,12 +1,21 @@
+import { useEffect } from "react";
+import { useScrollAnimations, useHoverAnimations } from "../animations";
+
 export default function Testimonials() {
+  useScrollAnimations();
+  useHoverAnimations();
+
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
+    <section
+      id="testimonials"
+      className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50"
+    >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 fade-in">
             What Our Clients Say
           </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
+          <p className="text-gray-600 max-w-3xl mx-auto fade-in">
             Don't just take our word for it. Here's what our clients have to say
             about our construction services.
           </p>
@@ -14,7 +23,7 @@ export default function Testimonials() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Testimonial Card - CEO */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md hover-lift slide-in-left">
             <div className="flex justify-between items-start mb-6">
               <img
                 src="https://storage.googleapis.com/tempo-public-images/github%7C174742302-1740827737283-WhatsApp%20Image%202025-03-01%20at%2012.08.13_d110d4a8.jpg"
@@ -51,7 +60,7 @@ export default function Testimonials() {
           </div>
 
           {/* Additional Testimonial Card */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md hover-lift slide-in-right">
             <div className="flex justify-between items-start mb-6">
               <img
                 src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
@@ -88,7 +97,7 @@ export default function Testimonials() {
           </div>
 
           {/* Additional Testimonial Card */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md hover-lift slide-in-left">
             <div className="flex justify-between items-start mb-6">
               <img
                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
@@ -125,7 +134,7 @@ export default function Testimonials() {
           </div>
 
           {/* Additional Testimonial Card */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md hover-lift slide-in-right">
             <div className="flex justify-between items-start mb-6">
               <img
                 src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"

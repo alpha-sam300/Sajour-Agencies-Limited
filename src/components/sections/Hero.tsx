@@ -9,6 +9,8 @@ interface HeroProps {
   backgroundImage?: string;
 }
 
+import { useScrollAnimations } from "../animations";
+
 export default function Hero({
   title = "Sajour Agencies Limited",
   subtitle = "Building Excellence Through Innovation and Quality Craftsmanship",
@@ -16,6 +18,7 @@ export default function Hero({
   ctaLink = "#contact",
   backgroundImage = "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
 }: HeroProps) {
+  useScrollAnimations();
   return (
     <section className="relative h-screen w-full bg-white overflow-hidden">
       {/* Background Image with Overlay */}
@@ -30,15 +33,15 @@ export default function Hero({
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 md:px-12 lg:px-24">
         <div className="max-w-4xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 fade-in">
             {title}
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto fade-in">
             {subtitle}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in">
             <Button
               size="lg"
               className="bg-white text-black hover:bg-white/90 font-medium px-8 py-6 h-auto"
