@@ -1,6 +1,9 @@
 export default function Achievements() {
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-24 bg-white">
+    <section
+      id="achievements"
+      className="py-16 px-6 md:px-12 lg:px-24 bg-white"
+    >
       <div className="flex flex-col md:flex-row gap-12">
         <div className="w-full md:w-1/2 bg-gray-200 min-h-[400px] flex items-center justify-center">
           <div className="w-32 h-32 flex items-center justify-center">

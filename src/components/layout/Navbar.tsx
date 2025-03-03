@@ -11,10 +11,9 @@ interface NavbarProps {
 export default function Navbar({
   logo = "Sajour Agencies",
   links = [
-    { label: "Home", href: "#" },
-    { label: "Services", href: "#services" },
     { label: "About", href: "#about" },
-    { label: "Testimonials", href: "#testimonials" },
+    { label: "Benefits", href: "#benefits" },
+    { label: "Services", href: "#services" },
     { label: "Contact", href: "#contact" },
   ],
 }: NavbarProps) {

@@ -24,7 +24,8 @@ export default function Hero({
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center parallax"
+          data-speed="0.2"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -33,18 +34,18 @@ export default function Hero({
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 md:px-12 lg:px-24">
         <div className="max-w-4xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 blur-in">
             {title}
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto fade-in">
+          <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto fade-up">
             {subtitle}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center stagger-container">
             <Button
               size="lg"
-              className="bg-white text-black hover:bg-white/90 font-medium px-8 py-6 h-auto"
+              className="bg-white text-black hover:bg-white/90 font-medium px-8 py-6 h-auto btn-pulse stagger-item"
               onClick={() => (window.location.href = ctaLink)}
             >
               {ctaText}
@@ -53,7 +54,7 @@ export default function Hero({
             <Button
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white/20 font-medium px-8 py-6 h-auto"
+              className="border-white text-white hover:bg-white/20 font-medium px-8 py-6 h-auto btn-pulse stagger-item"
               onClick={() => (window.location.href = "#services")}
             >
               Our Services
@@ -64,7 +65,7 @@ export default function Hero({
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 scroll-indicator">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"

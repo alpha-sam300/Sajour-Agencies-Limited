@@ -6,6 +6,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 import { Building2, Hammer, HardHat, Ruler } from "lucide-react";
 
 interface ServiceProps {
@@ -41,11 +42,18 @@ export default function Services({ services = defaultServices }: ServiceProps) {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 fade-in">
             Our Services
           </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto fade-in">
-            We provide comprehensive construction solutions tailored to meet
-            your specific needs, delivering excellence at every stage of your
-            project.
-          </p>
+          <div className="flex justify-center mt-4 fade-in">
+            <Button
+              className="bg-black text-white hover:bg-gray-800"
+              onClick={() =>
+                document
+                  .querySelector("#contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Contact Us
+            </Button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -84,16 +92,17 @@ export default function Services({ services = defaultServices }: ServiceProps) {
                     ))}
                   </ul>
 
-                  <h4 className="font-bold text-lg mb-2">Example Projects</h4>
-                  <div className="space-y-3">
-                    {service.details.projects.map((project, index) => (
-                      <div key={index} className="bg-gray-50 p-3 rounded">
-                        <h5 className="font-semibold">{project.name}</h5>
-                        <p className="text-gray-600 text-sm">
-                          {project.description}
-                        </p>
-                      </div>
-                    ))}
+                  <div className="mt-6">
+                    <Button
+                      className="bg-black text-white hover:bg-gray-800"
+                      onClick={() =>
+                        document
+                          .querySelector("#contact")
+                          ?.scrollIntoView({ behavior: "smooth" })
+                      }
+                    >
+                      Contact Us
+                    </Button>
                   </div>
                 </div>
               </DialogContent>

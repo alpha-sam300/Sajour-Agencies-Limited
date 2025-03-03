@@ -83,29 +83,22 @@ export default function ServiceDetailModal({
               ))}
             </ul>
           </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-2">Example Projects</h3>
-            <div className="space-y-4">
-              {service.exampleProjects.map((project, index) => (
-                <div
-                  key={index}
-                  className="border border-gray-200 rounded-md p-4"
-                >
-                  <h4 className="font-medium mb-1">{project.name}</h4>
-                  <p className="text-sm text-gray-600">{project.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
         <DialogFooter className="flex flex-col sm:flex-row sm:justify-between gap-3">
           <Button variant="outline" onClick={onClose}>
             Close
           </Button>
-          <Button className="bg-black text-white hover:bg-gray-800">
-            Request a Quote
+          <Button
+            className="bg-black text-white hover:bg-gray-800"
+            onClick={() => {
+              onClose();
+              document
+                .querySelector("#contact")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Contact Us
           </Button>
         </DialogFooter>
       </DialogContent>

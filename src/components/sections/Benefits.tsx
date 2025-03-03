@@ -1,6 +1,6 @@
 export default function Benefits() {
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-24 bg-white">
+    <section id="benefits" className="py-16 px-6 md:px-12 lg:px-24 bg-white">
       <div className="flex flex-col md:flex-row gap-12">
         <div className="w-full md:w-1/2">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
