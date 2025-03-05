@@ -14,7 +14,7 @@ export default function Navbar({
     { label: "About", href: "#about" },
     { label: "Benefits", href: "#benefits" },
     { label: "Services", href: "#services" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "/contact" },
   ],
 }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,8 +61,11 @@ export default function Navbar({
                   {link.label}
                 </a>
               ))}
-              <Button className="bg-black/80 text-white hover:bg-black/90 backdrop-blur-sm">
-                Get a Quote
+              <Button
+                className="bg-black/80 text-white hover:bg-black/90 backdrop-blur-sm"
+                onClick={() => (window.location.href = "/contact")}
+              >
+                Contact Us
               </Button>
             </div>
           </div>
@@ -103,8 +106,11 @@ export default function Navbar({
               {link.label}
             </a>
           ))}
-          <Button className="w-full bg-black/80 text-white hover:bg-black/90 backdrop-blur-sm">
-            Get a Quote
+          <Button
+            className="w-full bg-black/80 text-white hover:bg-black/90 backdrop-blur-sm"
+            onClick={() => (window.location.href = "/contact")}
+          >
+            Contact Us
           </Button>
         </div>
       </div>
