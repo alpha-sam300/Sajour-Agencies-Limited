@@ -29,24 +29,25 @@ export default function Achievements() {
             Our Achievements Speak for Themselves
           </h2>
           <p className="text-gray-700 mb-12">
-            With over 200 successful projects completed, we pride ourselves on
-            our commitment to quality and innovation. Our clients consistently
-            rate their satisfaction at 95%, reflecting our dedication to
-            excellence.
+            With over 200 successful projects completed using our interlocking
+            and hollow block technology, we've revolutionized construction in
+            Kenya. Our innovative building system has reduced construction costs
+            by an average of 30% while improving structural integrity and energy
+            efficiency.
           </p>
 
           <div className="flex flex-col md:flex-row gap-12 mb-8">
             <div>
-              <div className="text-4xl font-bold mb-1">26+</div>
+              <div className="text-4xl font-bold mb-1">500K+</div>
               <div className="text-gray-700">
-                Projects completed with precision and care
+                Interlocking blocks manufactured and installed
               </div>
             </div>
 
             <div>
-              <div className="text-4xl font-bold mb-1">6</div>
+              <div className="text-4xl font-bold mb-1">30%</div>
               <div className="text-gray-700">
-                Years of experience in the construction industry
+                Average cost savings compared to traditional construction
               </div>
             </div>
           </div>

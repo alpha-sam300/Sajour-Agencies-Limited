@@ -117,116 +117,116 @@ export default function Services({ services = defaultServices }: ServiceProps) {
 const defaultServices: Service[] = [
   {
     id: "1",
-    title: "Residential Construction",
+    title: "Interlocking Block Construction",
     description:
-      "Custom homes and renovations tailored to your lifestyle and preferences.",
+      "Durable, precise construction using our innovative interlocking block system.",
     icon: <Building2 className="h-8 w-8 text-gray-700" />,
     details: {
       fullDescription:
-        "Our residential construction services encompass everything from custom home building to comprehensive renovations. We work closely with homeowners to understand their vision, lifestyle needs, and budget constraints to deliver living spaces that exceed expectations.",
+        "Our interlocking block construction system revolutionizes building by eliminating the need for mortar in most applications. These precision-engineered blocks fit together seamlessly, creating structures that are stronger, faster to build, and more cost-effective than traditional construction methods.",
       benefits: [
-        "Personalized design consultation",
-        "Quality craftsmanship and materials",
-        "Energy-efficient building practices",
-        "Transparent project management",
+        "Up to 50% faster construction time",
+        "Reduced labor and material costs",
+        "Superior structural integrity and earthquake resistance",
+        "Precision engineering for perfect alignment",
       ],
       projects: [
         {
-          name: "Luxury Villa Development",
+          name: "Residential Housing Development",
           description:
-            "A collection of 12 custom-designed luxury villas with premium finishes and smart home integration.",
+            "A collection of 24 affordable homes built using our interlocking block system, completed in half the time of traditional construction.",
         },
         {
-          name: "Historic Home Renovation",
+          name: "Community Center",
           description:
-            "Careful restoration of a 100-year-old residence, preserving historical elements while modernizing systems.",
+            "A 15,000 sq ft multi-purpose facility constructed with interlocking blocks, showcasing the versatility and aesthetic appeal of our system.",
         },
       ],
     },
   },
   {
     id: "2",
-    title: "Commercial Construction",
+    title: "Hollow Block Solutions",
     description:
-      "Functional and impressive commercial spaces designed for productivity and growth.",
+      "Energy-efficient building solutions using advanced hollow block technology.",
     icon: <Ruler className="h-8 w-8 text-gray-700" />,
     details: {
       fullDescription:
-        "We deliver commercial construction projects that balance functionality, aesthetics, and cost-effectiveness. From office buildings to retail spaces, our team ensures that every commercial project meets the specific operational needs of your business while creating an environment that impresses clients and supports employee productivity.",
+        "Our hollow block technology provides superior insulation and sound dampening while maintaining structural integrity. These lightweight yet strong blocks create buildings that are more energy-efficient, environmentally friendly, and comfortable to live and work in.",
       benefits: [
-        "Strategic space planning and utilization",
-        "Minimal disruption to ongoing operations",
-        "Compliance with commercial building codes",
-        "Scalable designs for future expansion",
+        "Enhanced thermal insulation reducing energy costs",
+        "Superior sound dampening properties",
+        "Lighter weight reducing foundation requirements",
+        "Environmentally sustainable with less material usage",
       ],
       projects: [
         {
-          name: "Tech Company Headquarters",
+          name: "Eco-Friendly Office Complex",
           description:
-            "A 50,000 sq ft modern office space featuring collaborative work areas, state-of-the-art conference rooms, and employee amenities.",
+            "A 30,000 sq ft commercial building utilizing hollow blocks to achieve LEED certification through superior energy efficiency.",
         },
         {
-          name: "Retail Complex",
+          name: "Residential Apartments",
           description:
-            "Development of a multi-tenant retail space with customized storefronts, shared facilities, and ample parking.",
+            "A multi-story apartment building where hollow blocks provided sound isolation between units and reduced heating/cooling costs by 35%.",
         },
       ],
     },
   },
   {
     id: "3",
-    title: "Renovation & Remodeling",
+    title: "Custom Block Manufacturing",
     description:
-      "Transform existing spaces with our expert renovation and remodeling services.",
+      "Tailored block production to meet your specific project requirements.",
     icon: <Hammer className="h-8 w-8 text-gray-700" />,
     details: {
       fullDescription:
-        "Our renovation and remodeling services breathe new life into existing structures. Whether you're looking to update a dated space, improve functionality, or completely transform a property, our team combines creative design solutions with practical construction expertise to achieve remarkable results.",
+        "We manufacture custom interlocking and hollow blocks to meet the specific requirements of your project. Our state-of-the-art production facility can create blocks in various sizes, shapes, colors, and compositions to achieve your design vision while maintaining all the benefits of our innovative technology.",
       benefits: [
-        "Detailed assessment of existing structures",
-        "Creative solutions for space limitations",
-        "Minimal waste through strategic material reuse",
-        "Phased approaches to minimize disruption",
+        "Customized block dimensions and specifications",
+        "Various finishes and colors available",
+        "Quality control throughout the manufacturing process",
+        "Technical support and installation guidance",
       ],
       projects: [
         {
-          name: "Office Building Modernization",
+          name: "Luxury Resort",
           description:
-            "Complete interior and exterior renovation of a 1980s office building, including updated systems, open floor plans, and energy-efficient features.",
+            "Custom-colored interlocking blocks manufactured to match the natural landscape, creating a visually stunning yet structurally superior resort complex.",
         },
         {
-          name: "Restaurant Conversion",
+          name: "Industrial Facility",
           description:
-            "Transformation of a former retail space into an upscale restaurant, including kitchen installation, dining area design, and outdoor seating.",
+            "Specialized high-strength hollow blocks designed for a manufacturing facility with specific load-bearing and vibration-dampening requirements.",
         },
       ],
     },
   },
   {
     id: "4",
-    title: "Construction Management",
+    title: "Construction Training",
     description:
-      "Expert oversight ensuring your project is completed on time, within budget, and to specification.",
+      "Expert training for contractors and builders on our innovative block technologies.",
     icon: <HardHat className="h-8 w-8 text-gray-700" />,
     details: {
       fullDescription:
-        "Our construction management services provide comprehensive oversight of your project from inception to completion. We coordinate all aspects of the construction process, including scheduling, budgeting, quality control, and subcontractor management, allowing you to focus on your core business while we ensure your project's success.",
+        "We provide comprehensive training programs for construction professionals looking to adopt our interlocking and hollow block technologies. Our expert-led workshops cover everything from basic installation techniques to advanced applications, ensuring your team can maximize the benefits of these innovative building systems.",
       benefits: [
-        "Single point of accountability",
-        "Rigorous quality control processes",
-        "Detailed progress reporting",
-        "Proactive risk management",
+        "Hands-on practical training sessions",
+        "Certification for completed training programs",
+        "Ongoing technical support",
+        "Access to our network of experienced installers",
       ],
       projects: [
         {
-          name: "Mixed-Use Development",
+          name: "Contractor Certification Program",
           description:
-            "Management of a complex project combining residential, retail, and office spaces, coordinating multiple contractors and ensuring cohesive execution.",
+            "A three-week intensive training program that has certified over 200 contractors in interlocking block construction techniques.",
         },
         {
-          name: "Hospital Expansion",
+          name: "Government Housing Initiative",
           description:
-            "Oversight of a sensitive healthcare facility expansion, ensuring minimal disruption to ongoing operations while maintaining strict compliance with healthcare building standards.",
+            "Training provided to government construction teams for a large-scale affordable housing project using our block technologies.",
         },
       ],
     },

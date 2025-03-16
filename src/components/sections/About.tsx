@@ -13,9 +13,10 @@ export default function About() {
           </h2>
           <p className="text-gray-700 max-w-3xl mx-auto">
             At Sajour Agencies Limited, our passion for innovation drives us to
-            deliver high-quality projects that not only meet but exceed the
-            needs of our clients. Every structure we build is a testament to our
-            dedication to craftsmanship, sustainability, and long-lasting value.
+            deliver high-quality construction using our specialized interlocking
+            and hollow blocks technology. Every structure we build is more
+            durable, energy-efficient, and cost-effective than traditional
+            construction methods.
           </p>
         </div>
 
@@ -30,11 +31,11 @@ export default function About() {
           <div>
             <h3 className="text-2xl font-bold mb-4">Our Story</h3>
             <p className="text-gray-700 mb-6">
-              Founded in 2010, Sajour Agencies Limited has grown from a small
-              local contractor to a respected name in the construction industry.
-              Our journey has been defined by a relentless pursuit of excellence
-              and a commitment to building lasting relationships with our
-              clients.
+              Founded in 2014, Sajour Agencies Limited has pioneered the use of
+              interlocking and hollow blocks technology in Kenya. Our journey
+              has been defined by innovation in sustainable construction methods
+              that reduce building costs while increasing structural integrity
+              and thermal efficiency.
             </p>
             <p className="text-gray-700 mb-6">
               We believe that successful construction projects are built on a
@@ -42,7 +43,10 @@ export default function About() {
               respect. This philosophy has guided our approach to every project
               we undertake.
             </p>
-            <Button className="bg-black text-white hover:bg-gray-800">
+            <Button
+              className="bg-black text-white hover:bg-gray-800"
+              onClick={() => (window.location.href = "/about")}
+            >
               Learn More About Our Journey
             </Button>
           </div>

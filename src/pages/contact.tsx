@@ -9,8 +9,9 @@ export default function ContactPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-gray-700 max-w-2xl mx-auto">
-            We're here to answer any questions you may have about our services.
-            Reach out to us and we'll respond as soon as we can.
+            We're here to answer any questions you may have about our
+            interlocking and hollow block technology. Reach out to us and we'll
+            respond as soon as we can.
           </p>
         </div>
 

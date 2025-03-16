@@ -4,14 +4,15 @@ export default function Benefits() {
       <div className="flex flex-col md:flex-row gap-12">
         <div className="w-full md:w-1/2">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Discover the Unmatched Benefits of Partnering with Our Construction
-            Firm
+            Discover the Unmatched Benefits of Our Interlocking & Hollow Block
+            Technology
           </h2>
           <p className="text-gray-700 mb-8">
-            We prioritize top-notch materials and craftsmanship to ensure
-            lasting durability and performance. Rigorous quality checks at every
-            stage of construction guarantee that each project reflects our
-            unwavering commitment to excellence.
+            Our innovative building system offers significant advantages over
+            traditional construction methods, including faster construction
+            times, reduced costs, superior structural integrity, and enhanced
+            energy efficiency. Each block is precision-engineered to ensure
+            perfect alignment and long-term performance.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -31,12 +32,13 @@ export default function Benefits() {
                   <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3">Quality Assurance</h3>
+              <h3 className="text-xl font-bold mb-3">Cost & Time Efficiency</h3>
               <p className="text-gray-700">
-                We prioritize top-notch materials and craftsmanship to ensure
-                lasting durability and performance. Rigorous quality checks at
-                every stage of construction guarantee that each project reflects
-                our unwavering commitment to excellence.
+                Our interlocking block system reduces construction time by up to
+                50% compared to traditional methods. With minimal mortar
+                requirements and faster installation, you'll see significant
+                savings in both labor and material costs while achieving
+                superior results.
               </p>
             </div>
 
@@ -56,13 +58,13 @@ export default function Benefits() {
                   <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3">Innovative Solutions</h3>
+              <h3 className="text-xl font-bold mb-3">Energy Efficiency</h3>
               <p className="text-gray-700">
-                By embracing cutting-edge techniques and creative
-                problem-solving, we design forward-thinking structures that set
-                you apart in a competitive market. Our focus on continuous
-                improvement means we're always refining our methods to stay
-                ahead of industry trends.
+                Our hollow block technology provides superior thermal
+                insulation, reducing heating and cooling costs by up to 35%. The
+                unique design creates natural air pockets that regulate
+                temperature and dampen sound, creating more comfortable and
+                energy-efficient buildings.
               </p>
             </div>
           </div>

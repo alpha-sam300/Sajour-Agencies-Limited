@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 
 interface NavbarProps {
   logo?: string;
@@ -11,17 +11,30 @@ interface NavbarProps {
 export default function Navbar({
   logo = "Sajour Agencies",
   links = [
-    { label: "About", href: "#about" },
-    { label: "Benefits", href: "#benefits" },
-    { label: "Services", href: "#services" },
-    { label: "Contact", href: "/contact" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Projects", href: "/projects" },
+    { label: "Blog", href: "/blog" },
   ],
 }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDarkMode]);
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -43,7 +56,7 @@ export default function Navbar({
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-xl font-bold">
+            <a href="/" className="text-xl font-bold">
               {logo}
             </a>
           </div>
@@ -61,12 +74,27 @@ export default function Navbar({
                   {link.label}
                 </a>
               ))}
-              <Button
-                className="bg-black/80 text-white hover:bg-black/90 backdrop-blur-sm"
-                onClick={() => (window.location.href = "/contact")}
-              >
-                Contact Us
-              </Button>
+              <div className="flex items-center space-x-4">
+                <Button
+                  className="bg-black/80 text-white hover:bg-black/90 backdrop-blur-sm"
+                  onClick={() => (window.location.href = "/contact")}
+                >
+                  Contact Us
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={toggleDarkMode}
+                  aria-label="Toggle dark mode"
+                  className="text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white"
+                >
+                  {isDarkMode ? (
+                    <Sun className="h-5 w-5" />
+                  ) : (
+                    <Moon className="h-5 w-5" />
+                  )}
+                </Button>
+              </div>
             </div>
           </div>
 
@@ -106,12 +134,31 @@ export default function Navbar({
               {link.label}
             </a>
           ))}
-          <Button
-            className="w-full bg-black/80 text-white hover:bg-black/90 backdrop-blur-sm"
-            onClick={() => (window.location.href = "/contact")}
-          >
-            Contact Us
-          </Button>
+          <div className="space-y-4">
+            <Button
+              className="w-full bg-black/80 text-white hover:bg-black/90 backdrop-blur-sm"
+              onClick={() => (window.location.href = "/contact")}
+            >
+              Contact Us
+            </Button>
+            <Button
+              variant="outline"
+              className="w-full flex items-center justify-center space-x-2"
+              onClick={toggleDarkMode}
+            >
+              {isDarkMode ? (
+                <>
+                  <Sun className="h-5 w-5" />
+                  <span>Light Mode</span>
+                </>
+              ) : (
+                <>
+                  <Moon className="h-5 w-5" />
+                  <span>Dark Mode</span>
+                </>
+              )}
+            </Button>
+          </div>
         </div>
       </div>
     </nav>

@@ -13,7 +13,7 @@ import { useScrollAnimations } from "../animations";
 
 export default function Hero({
   title = "Sajour Agencies Limited",
-  subtitle = "Building Excellence Through Innovation and Quality Craftsmanship",
+  subtitle = "Building Excellence Through Innovative Interlocking & Hollow Blocks Technology",
   ctaText = "Get Started",
   ctaLink = "#contact",
   backgroundImage = "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
@@ -46,7 +46,11 @@ export default function Hero({
             <Button
               size="lg"
               className="bg-white text-black hover:bg-white/90 font-medium px-8 py-6 h-auto btn-pulse stagger-item"
-              onClick={() => (window.location.href = ctaLink)}
+              onClick={() =>
+                document
+                  .querySelector(ctaLink)
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               {ctaText}
             </Button>
@@ -55,7 +59,11 @@ export default function Hero({
               variant="outline"
               size="lg"
               className="border-white text-white hover:bg-white/20 font-medium px-8 py-6 h-auto btn-pulse stagger-item"
-              onClick={() => (window.location.href = "#services")}
+              onClick={() =>
+                document
+                  .querySelector("#services")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Our Services
               <ArrowRight className="ml-2 h-5 w-5" />
